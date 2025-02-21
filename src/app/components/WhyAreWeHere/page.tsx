@@ -35,7 +35,7 @@ export function WhyAreWeHere() {
         .join("");
 
       gsap.from(element.querySelectorAll(".char"), {
-        duration: 5,
+        duration: 0.8,
         y: 100,
         autoAlpha: 0,
         stagger: 0.05,
@@ -59,7 +59,7 @@ export function WhyAreWeHere() {
       if (currentIndex >= 0) {
         gsap.set(sectionsRef.current[currentIndex], { zIndex: 0 });
         tl.to(imagesRef.current[currentIndex], { yPercent: -15 * dFactor })
-          .set(sectionsRef.current[currentIndex], { autoAlpha: 0 });
+        .set(sectionsRef.current[currentIndex], { autoAlpha: 0 });
       }
 
       gsap.set(sectionsRef.current[index], { autoAlpha: 1, zIndex: 1 });
@@ -93,8 +93,8 @@ export function WhyAreWeHere() {
   });
 
   return (
-    <div>
-      <header className="fixed flex items-center justify-between px-5 w-full z-30 h-28 font-bebas text-xl tracking-widest text-black">
+    <div className=''>
+      <header className="absolute flex items-start justify-between px-5 w-full z-30 h-28 font-bebas text-xl tracking-widest text-black">
         <div>Scroll Open Hackathon</div>
         <div>
           <a href="https://thesynthos.notion.site/SynthOS-Automate-Your-Gains-19618bd263f08027993cfa6c5618941d" target="_blank" rel="noopener noreferrer">

@@ -40,16 +40,40 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
+  // const backgroundColors = [
+  //   "blue",
+  //   "black",
+  //   "green",
+  //   "purple",
+  // ];
+
   const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
+  "rgba(255, 252, 191, 0.6)", // Light Gray Transparent
+  "rgba(158, 255, 247, 0.6)",       // Black Transparent
+  "rgba(248, 252, 229, 0.6)",   // Green Transparent
+  "rgba(242, 242, 255, 0.8)",  // Purple Transparent
+];
+
+// Random white pattern backgrounds
+const randomPatternBackgrounds = [
+  "radial-gradient(circle at 30% 30%, rgba(178, 222, 2, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 70% 70%, rgba(101, 90, 255, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 30% 30%, rgba(20, 255, 243, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 60% 60%, rgba(222, 10, 246, 0.5) 0%, transparent 60%)",
+];
+
   const linearGradients = [
-    "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
-    "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
-    "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
+    "linear-gradient(to bottom right, green, yellow)",
+    "linear-gradient(to bottom right, pink, indigo)",
+    "linear-gradient(to bottom right, orange, green)",
   ];
+const [patternBackground, setPatternBackground] = useState(
+  randomPatternBackgrounds[0]
+);
+
+useEffect(() => {
+  setPatternBackground(randomPatternBackgrounds[activeCard % randomPatternBackgrounds.length]);
+}, [activeCard]);
 
   const [backgroundGradient, setBackgroundGradient] = useState(
     linearGradients[0]
@@ -67,6 +91,15 @@ export const StickyScroll = ({
       className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
+      {/* Blurry Background Overlay */}
+    <div
+      className="absolute inset-0 z-0"
+      style={{
+        background: patternBackground,
+        filter: "blur(50px)", // Blurry effect
+        opacity: 0.7, // Slight transparency
+      }}
+    />
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
@@ -78,7 +111,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-slate-100"
+                className="text-2xl font-bold text-grey-800"
               >
                 {item.title}
               </motion.h2>
@@ -89,7 +122,7 @@ export const StickyScroll = ({
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-slate-300 max-w-sm mt-10"
+                className="text-kg text-grey-600 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
@@ -101,7 +134,7 @@ export const StickyScroll = ({
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-md bg-white sticky top-10 overflow-hidden",
+          "hidden lg:block h-60 w-80 rounded-lg bg-white sticky top-10 overflow-hidden border border-4 border-grey-200",
           contentClassName
         )}
       >
