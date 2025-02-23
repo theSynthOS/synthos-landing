@@ -48,18 +48,18 @@ export const StickyScroll = ({
   // ];
 
   const backgroundColors = [
-  "rgba(255, 252, 191, 0.6)", // Light Gray Transparent
-  "rgba(158, 255, 247, 0.6)",       // Black Transparent
-  "rgba(248, 252, 229, 0.6)",   // Green Transparent
-  "rgba(242, 242, 255, 0.8)",  // Purple Transparent
+  "rgba(249, 255, 158, 0.8)", 
+  "rgba(246, 255, 106, 0.8)",       
+  "rgba(243, 255, 66, 0.8)",   
+  "rgba(240, 255, 8, 0.8)",  
 ];
 
 // Random white pattern backgrounds
 const randomPatternBackgrounds = [
-  "radial-gradient(circle at 30% 30%, rgba(178, 222, 2, 0.5) 0%, transparent 60%)",
-  "radial-gradient(circle at 70% 70%, rgba(101, 90, 255, 0.5) 0%, transparent 60%)",
-  "radial-gradient(circle at 30% 30%, rgba(20, 255, 243, 0.5) 0%, transparent 60%)",
-  "radial-gradient(circle at 60% 60%, rgba(222, 10, 246, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 30% 30%, rgba(170, 243, 255, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 70% 70%, rgba(136, 236, 253, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 30% 30%, rgba(115, 234, 254, 0.5) 0%, transparent 60%)",
+  "radial-gradient(circle at 60% 60%, rgba(85, 229, 254, 0.5) 0%, transparent 60%)",
 ];
 
   const linearGradients = [
@@ -84,11 +84,12 @@ useEffect(() => {
   }, [activeCard]);
 
   return (
+    <div className="">
     <motion.div
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+      className="max-h-screen overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
     >
       {/* Blurry Background Overlay */}
@@ -111,7 +112,7 @@ useEffect(() => {
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-2xl font-bold text-grey-800"
+                className="text-2xl font-bold text-gray-800"
               >
                 {item.title}
               </motion.h2>
@@ -122,7 +123,7 @@ useEffect(() => {
                 animate={{
                   opacity: activeCard === index ? 1 : 0.3,
                 }}
-                className="text-kg text-grey-600 max-w-sm mt-10"
+                className="text-kg text-gray-600 max-w-sm mt-10"
               >
                 {item.description}
               </motion.p>
@@ -134,12 +135,13 @@ useEffect(() => {
       <div
         style={{ background: backgroundGradient }}
         className={cn(
-          "hidden lg:block h-60 w-80 rounded-lg bg-white sticky top-10 overflow-hidden border border-4 border-grey-200",
+          "hidden lg:block h-60 w-80 rounded-lg bg-white sticky top-10 overflow-hidden  border-4 border-grey-200",
           contentClassName
         )}
       >
         {content[activeCard].content ?? null}
       </div>
     </motion.div>
+    </div>
   );
 };
