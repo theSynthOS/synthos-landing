@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Gluten } from "next/font/google";
 import "./globals.css";
 
+
 const gluten = Gluten({
   weight: ["400", "700"],
   subsets: ["latin"],

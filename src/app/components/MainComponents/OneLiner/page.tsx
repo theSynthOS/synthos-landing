@@ -51,17 +51,8 @@ const OneLiner = () => {
       </motion.div>
 
       {/* Right Side  */}
-      <div className='w-1/2 h-full hidden md:block'>
-     <motion.div
-            className="Welcome-box py-[8px] px-[4px] border border-yellow-600 opacity-[0.9] flex items-center justify-center "
-            variants={slideInFromTop} 
-          >
-            <SparklesIcon className="text-yellow-500 mr-[10px] h-5 w-5" />
-            <h1 className="Welcome-text text-[16px] ">Only on 👇🏻</h1>
-          </motion.div>
-      <div>
-        <video src="/SynthOS.webm" autoPlay muted loop className='w-full h-full object-cover' />
-      </div>
+      <div className="w-1/2 flex items-center justify-center h-full hidden md:flex">
+        <video src="/SynthOS.webm" autoPlay muted loop className="w-[70%] h-auto object-cover" />
       </div>
   
 
