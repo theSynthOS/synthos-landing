@@ -2,6 +2,7 @@
 import React from "react";
 import { StickyScroll } from "../../ui/sticky-scroll-reveal";
 import Image from "next/image";
+//import { ThreeScene } from "../../threeJS/threeScene";
 
 const content = [
   {
@@ -71,8 +72,13 @@ const content = [
 ];
 export function HowItWorks() {
   return (
+    <>
     <div className="min-h-screen">
       <StickyScroll content={content} />
     </div>
+    {/* <div className="relative z-30 md:w-1/2 justify-center items-center h-[500px] hidden md:block">
+        <ThreeScene />
+      </div> */}
+      </>
   );
 }

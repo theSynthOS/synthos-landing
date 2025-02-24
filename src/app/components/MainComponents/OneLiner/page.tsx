@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { slideInFromLeft, slideInFromTop } from '../../../../../utils/motion'
 import { SparklesIcon } from '@heroicons/react/24/solid'
-import { ThreeScene } from '../../threeJS/threeScene'
+//import { ThreeScene } from '../../threeJS/threeScene'
 
 const OneLiner = () => {
   return (
@@ -13,7 +13,7 @@ const OneLiner = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-col items-start justify-center mt-[170px] z-[20] md:w-1/2"
+        className="flex flex-col items-start justify-center mt-[100px] md:mt-[170px] z-[20] md:w-1/2"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
           <motion.div
@@ -50,10 +50,18 @@ const OneLiner = () => {
         </motion.div>
       </motion.div>
 
-      {/* Right Side (3D Model) */}
-     
-      <div className="relative z-30 md:w-1/2 justify-center items-center h-[500px] hidden md:block">
-        <ThreeScene />
+      {/* Right Side  */}
+      <div className='w-1/2 h-full hidden md:block'>
+     <motion.div
+            className="Welcome-box py-[8px] px-[4px] border border-yellow-600 opacity-[0.9] flex items-center justify-center "
+            variants={slideInFromTop} 
+          >
+            <SparklesIcon className="text-yellow-500 mr-[10px] h-5 w-5" />
+            <h1 className="Welcome-text text-[16px] ">Only on 👇🏻</h1>
+          </motion.div>
+      <div>
+        <video src="/SynthOS.webm" autoPlay muted loop className='w-full h-full object-cover' />
+      </div>
       </div>
   
 
