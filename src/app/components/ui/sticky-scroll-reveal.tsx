@@ -2,7 +2,8 @@
 import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-import { cn } from "../../../../lib/utils";
+import { cn } from "@/lib/utils";
+import { transparent } from "tailwindcss/colors";
 
 export const StickyScroll = ({
   content,
@@ -39,26 +40,14 @@ export const StickyScroll = ({
   });
 
   // Define background colors
-  const backgroundColors = ["rgba(255, 252, 218, 1)"];
+  const backgroundColors = transparent;
 
   return (
     <div className="">
       <motion.div
-        animate={{
-          backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-        }}
-        className="max-h-screen overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
+        className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10"
         ref={ref}
       >
-        {/* Blurry Background Overlay */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            background: backgroundColors[0], // Ensure solid background, no gradient
-            opacity: 0.7,
-          }}
-        />
-
         <div className="div relative flex items-start px-4">
           <div className="max-w-2xl">
             {content.map((item, index) => (
@@ -66,7 +55,7 @@ export const StickyScroll = ({
                 <motion.h2
                   initial={{ opacity: 0 }}
                   animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                  className="text-2xl font-bold text-gray-800"
+                  className="text-3xl font-bold text-gray-800"
                 >
                   {item.title}
                 </motion.h2>
@@ -83,11 +72,10 @@ export const StickyScroll = ({
           </div>
         </div>
 
-        {/* Removed gradient and kept only background color */}
         <div
           style={{ background: backgroundColors[0] }} // Solid background color
           className={cn(
-            "hidden lg:block h-60 w-80 rounded-lg bg-white sticky top-10 overflow-hidden border-4 border-grey-200",
+            "hidden lg:block h-full w-[40rem] rounded-lg sticky top-10 overflow-hidden border-4 border-grey-200",
             contentClassName
           )}
         >

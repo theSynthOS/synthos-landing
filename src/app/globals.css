@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #fffcda;
+  --background: rgb(255, 252, 218);
 
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground: #ededed;
+    --foreground: #fffcda;
   }
 }
 
@@ -49,8 +49,16 @@
   margin-right: auto;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    background-color: rgb(255, 252, 218);
+    @apply text-foreground;
+  }
 }
+
+

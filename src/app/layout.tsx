@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Gluten } from "next/font/google";
 import "./globals.css";
+import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
 
 
 const gluten = Gluten({
