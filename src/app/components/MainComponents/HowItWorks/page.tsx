@@ -85,6 +85,7 @@ export function HowItWorks() {
     <>
      <div className="relative min-h-screen bg-[rgb(255, 252, 218)]">
       <div className="relative z-10">
+        <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">How It Works</h1>
         <StickyScroll content={content} />
       </div>
     </div>

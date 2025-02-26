@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 export function WhyAreWeHere() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-      <h1 className="text-4xl font-bold text-center mb-10">Pain Points and Our Approach</h1>
+      <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">Pain Points and Our Approach</h1>
       <InfiniteMovingCards
         items={painPoints}
         direction="right"
@@ -17,6 +17,7 @@ export function WhyAreWeHere() {
 }
 
 const painPoints = [
+  
   {
     id: 1,
     quote: "Users are tired of juggling multiple dApps, searching for the best yield on their own.",
@@ -34,5 +35,11 @@ const painPoints = [
     quote: "Fear of accidentally signing something malicious.",
     name: "Solution",
     title: "SynthOS runs on a secure foundation so you always see exactly what you're agreeing to, no more blind trust."
+  },
+  {
+    id:4,
+    quote: "There are too many AI agents in the space—how do users find them or even remember their names?",
+    name: "Solution",
+    title: "SynthOS simplifies the search by categorizing AI agents based on their specific actions, making discovery effortless."
   }
 ];

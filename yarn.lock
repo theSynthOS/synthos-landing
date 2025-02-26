@@ -1631,7 +1631,7 @@ framer-motion-3d@^12.4.7:
 
 framer-motion@^12.4.7:
   version "12.4.7"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-12.4.7.tgz"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-12.4.7.tgz#52a9fe42852707bedbbbaa988d252a4a62dd58fa"
   integrity sha512-VhrcbtcAMXfxlrjeHPpWVu2+mkcoR31e02aNSR7OUS/hZAciKa8q6o3YN2mA1h+jjscRsSyKvX6E1CiY/7OLMw==
   dependencies:
     motion-dom "^12.4.5"
