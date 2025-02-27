@@ -7,6 +7,7 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 import { motion } from "framer-motion";
 import { Menu, MenuItem, HoveredLink } from "@/components/ui/navbar-menu";
 import React from "react";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   const [active, setActive] = React.useState<string | null>(null);
@@ -32,15 +33,14 @@ export default function Home() {
         <BackgroundGradientAnimation containerClassName="absolute inset-0 z-0" />
       </motion.div>
         <div className="flex flex-col">
-          <div className="h-screen snap-start">
+          <div className="h-screen ">
             <OneLiner />
           </div>
 
-          <div className=" snap-start">
-            <WhyAreWeHere />
-            <HowItWorks />
-          </div>
-
+          <WhyAreWeHere />
+          <HowItWorks />
+          <Footer />
+          
         </div>
     </main>
   );

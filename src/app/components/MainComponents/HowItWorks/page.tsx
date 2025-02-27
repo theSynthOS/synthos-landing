@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "../../ui/sticky-scroll-reveal";
+import { StickyScroll } from "../../../../components/ui/sticky-scroll-reveal";
 import Image from "next/image";
 import { motion } from 'framer-motion'
 import { slideInFromBottom} from "../../../../../utils/motion";
@@ -83,8 +83,8 @@ const content = [
 export function HowItWorks() {
   return (
     <>
-     <div className="relative min-h-screen bg-[rgb(255, 252, 218)]">
-      <div className="relative z-10">
+     <div className="relative h-full bg-[rgb(255, 252, 218)]">
+      <div className="relative z-10 mb-[10%]">
         <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">How It Works</h1>
         <StickyScroll content={content} />
       </div>
