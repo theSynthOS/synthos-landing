@@ -1,6 +1,6 @@
 'use client'
-import { HowItWorks } from "./components/MainComponents/HowItWorks/page";
-import { WhyAreWeHere } from "./components/MainComponents/WhyAreWeHere/page";
+import HowItWorks from "./components/MainComponents/HowItWorks/page";
+import WhyAreWeHere from "./components/MainComponents/WhyAreWeHere/page";
 import OneLiner from "./components/MainComponents/OneLiner/page";
 // import { ThreeScene } from "./components/threeJS/threeScene";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
