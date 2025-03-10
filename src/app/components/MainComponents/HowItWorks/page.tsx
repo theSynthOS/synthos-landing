@@ -77,7 +77,7 @@ export default function HowItWorks() {
     <>
      <div className="relative h-full ">
       <div className="relative z-10 mb-[10%]">
-        <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">How It Works</h1>
+        <h1 className="text-4xl font-bold text-center mb-10 text-yellow-500">How It Works</h1>
         <StickyScroll content={content} />
       </div>
     </div>

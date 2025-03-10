@@ -38,7 +38,7 @@ const OneLiner = () => {
 
           <motion.div
             variants={slideInFromLeft(0.8)}
-            className="flex flex-col gap-6 mt-6 font-bold text-yellow-600 w-auto h-auto text-[50px] md:text-[100px]"
+            className="flex flex-col gap-6 mt-6 font-bold text-yellow-500 w-auto h-auto text-[50px] md:text-[100px]"
           >
             SynthOS
             <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-[30px] md:text-[50px] text-pretty md:text-nowrap">
