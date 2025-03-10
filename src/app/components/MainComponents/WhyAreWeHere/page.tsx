@@ -3,7 +3,7 @@
 import React from "react";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 
-export function WhyAreWeHere() {
+export default function WhyAreWeHere() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">Pain Points and Our Approach</h1>
