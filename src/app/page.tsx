@@ -28,7 +28,7 @@ export default function Home() {
 
       <motion.div 
         style={{ opacity:1 }} 
-        className="absolute inset-0 bg-[rgb(255,252,218)]"
+        className="absolute inset-0 "
       >
         <BackgroundGradientAnimation containerClassName="absolute inset-0 z-0" />
       </motion.div>

@@ -4,7 +4,7 @@ import { Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="relative z-10 py-16 border-t border-yellow-300 bg-yellow-50">
+    <footer className="relative z-10 py-16 border-t border-yellow-300 bg-[#09092f]">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-yellow-600 text-sm">

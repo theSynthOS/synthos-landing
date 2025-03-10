@@ -83,7 +83,7 @@ const content = [
 export function HowItWorks() {
   return (
     <>
-     <div className="relative h-full bg-[rgb(255, 252, 218)]">
+     <div className="relative h-full ">
       <div className="relative z-10 mb-[10%]">
         <h1 className="text-4xl font-bold text-center mb-10 text-yellow-700">How It Works</h1>
         <StickyScroll content={content} />
