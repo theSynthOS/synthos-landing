@@ -18,13 +18,13 @@ const OneLiner = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="relative z-10 flex flex-col md:flex-row h-full w-full px-20 items-center justify-between"
+        className="relative z-10 flex flex-col md:flex-row h-full w-full  items-center justify-between px-10"
       >
         {/* Left Content (Text & Motion Elements) */}
         <motion.div
           initial="hidden"
           animate="visible"
-          className="flex flex-col items-start justify-center mt-[100px] z-[20] md:w-1/2"
+          className="flex flex-col items-start justify-center mt-[120px] md:mt-[100px] z-[20] md:w-1/2"
         >
           <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
             <motion.div
@@ -38,17 +38,17 @@ const OneLiner = () => {
 
           <motion.div
             variants={slideInFromLeft(0.8)}
-            className="flex flex-col gap-6 mt-6 font-bold text-yellow-500 w-auto h-auto text-[50px] md:text-[100px]"
+            className="flex flex-col gap-6 mt-6 font-bold text-yellow-500 w-auto h-auto text-[40px] md:text-[60px] lg:text-[100px]"
           >
             SynthOS
-            <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-[30px] md:text-[50px] text-pretty md:text-nowrap">
+            <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-[30px] md:text-[40px] lg:text-[50px] text-pretty md:text-nowrap">
               The AI Agent Marketplace for DeFi
             </p>
           </motion.div>
 
           <motion.div
             variants={slideInFromLeft(1.3)}
-            className="text-yellow-600 text-[25px]"
+            className="text-yellow-600 text-[20px] md:text-[25px] lg:text-[30px]"
           >
             – Automate, Optimize, and Earn Effortlessly.
           </motion.div>
