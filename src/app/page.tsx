@@ -33,12 +33,11 @@ export default function Home() {
         <BackgroundGradientAnimation containerClassName="absolute inset-0 z-0" />
       </motion.div>
         <div className="flex flex-col">
-          <div className="h-screen ">
+          <div className="lg:h-screen snap-start">
             <OneLiner />
           </div>
-
-          <WhyAreWeHere />
-          <HowItWorks />
+          <div className="snap-start"><WhyAreWeHere /></div>
+          <div className="snap-start"><HowItWorks /></div>
           <Footer />
           
         </div>

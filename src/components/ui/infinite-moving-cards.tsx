@@ -93,7 +93,9 @@ export const InfiniteMovingCards = ({
             key={item.id}
             className="w-[450px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-yellow-700 px-8 py-8 md:w-[600px]"
             style={{
-              background: "linear-gradient(180deg, rgba(255, 252, 218, 0.9), rgba(255, 252, 218, 0.95))",
+              background: "linear-gradient(180deg, rgba(255, 252, 218, 0.5), rgba(255, 252, 218, 0.55))",
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)"
             }}
           >
             <blockquote>
@@ -101,14 +103,14 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-xl leading-[1.6] text-yellow-600 font-semibold block mb-4">
+              <span className="relative z-20 text-md md:text-lg lg:text-xl leading-[1.6] text-yellow-200 font-semibold block mb-4">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-col gap-3">
-                <span className="text-lg font-bold text-yellow-700">
+                <span className="text-md md:text-lg lg:text-xl font-bold text-orange-200">
                   {item.name}
                 </span>
-                <span className="text-base leading-relaxed text-yellow-500">
+                <span className="text-md md:text-lg lg:text-xl leading-relaxed text-yellow-400">
                   {item.title}
                 </span>
               </div>
