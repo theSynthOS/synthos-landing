@@ -14,14 +14,14 @@ export default function Home() {
 
   return (
     <main className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
-      <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
-        <Menu setActive={setActive}>
+      <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 text-nowrap">
+        <Menu setActive={setActive} >
           <HoveredLink href="https://thesynthos.notion.site/" target="_blank">
             <MenuItem setActive={setActive} active={active} item="Docs" />
           </HoveredLink>
 
-          <HoveredLink href="https://app.example.com" target="_blank">
-            <MenuItem setActive={setActive} active={active} item="Launch App" />
+          <HoveredLink href="https://app.synthos.fun/" target="_blank">
+            <MenuItem setActive={setActive} active={active} item="Launch_App" />
           </HoveredLink>
         </Menu>
       </div>

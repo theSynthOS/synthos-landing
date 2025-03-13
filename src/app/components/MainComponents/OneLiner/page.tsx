@@ -66,7 +66,7 @@ const OneLiner = () => {
           variants={slideInFromRight(1)}
           className="w-1/2 flex items-center justify-center h-full hidden md:flex"
         >
-          <video src="/SynthOS.webm" autoPlay muted loop className="w-[70%] h-auto object-cover" />
+          <video src="/SynthOS.webm" autoPlay muted loop className="w-[70%] h-auto object-cover hidden lg:block" />
         </motion.div>
       </motion.div>
     </div>
