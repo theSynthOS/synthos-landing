@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gluten.className} overflow-x-hidden overflow-y-scroll`}
+        className={`${gluten.className} overflow-x-hidden overflow-y-scroll mx-2 `}
       >
         {children}
       </body>
