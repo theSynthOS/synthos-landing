@@ -31,8 +31,8 @@ const content = [
       <div className="h-full w-full flex items-center justify-center">
         <Image
           src="/chatbot.png"
-          width={300}
-          height={300}
+          width={500}
+          height={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
@@ -48,8 +48,8 @@ const content = [
       <div className="h-full w-full flex items-center justify-center">
         <Image
           src="/log.png"
-          width={300}
-          height={300}
+          width={500}
+          height={500}
           className="h-full w-full object-cover"
           alt="linear board demo"
         />
