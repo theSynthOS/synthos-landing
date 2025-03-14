@@ -14,7 +14,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center ">
         <Image
-          src="/1a.png"
+          src="/ui.png"
           width={500}
           height={500}
           className="h-full w-full object-cover"
@@ -30,7 +30,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <Image
-          src="/2a.png"
+          src="/chatbot.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -47,7 +47,7 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center justify-center">
         <Image
-          src="/4a.png"
+          src="/log.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
