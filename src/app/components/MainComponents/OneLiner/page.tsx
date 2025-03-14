@@ -5,6 +5,7 @@ import { slideInFromLeft, slideInFromTop, slideInFromRight } from '../../../../.
 import { SparklesIcon } from '@heroicons/react/24/solid'
 //import { ThreeScene } from '../../threeJS/threeScene'
 import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation'
+import Link from 'next/link'
 
 const OneLiner = () => {
   const { scrollY } = useScroll();
@@ -55,9 +56,16 @@ const OneLiner = () => {
 
           <motion.div
             variants={slideInFromLeft(1.6)}
-            className="mt-6 text-yellow-600 text-[25px] border-2 border-yellow-500 px-4 py-2 rounded cursor-pointer"
+            className="mt-6 cursor-pointer"
           >
-            Launch App
+            <Link 
+              href="https://app.synthos.fun" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center text-yellow-600 text-[25px] border-2 border-yellow-500 px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-white transition-colors"
+            >
+              Launch App
+            </Link>
           </motion.div>
         </motion.div>
 

@@ -11,6 +11,9 @@ const gluten = Gluten({
 export const metadata: Metadata = {
   title: "SynthOS",
   description: "AI Marketplace for DeFi Agents",
+  icons: {
+    icon: "/logo.jpeg",
+  },
 };
 
 export default function RootLayout({
