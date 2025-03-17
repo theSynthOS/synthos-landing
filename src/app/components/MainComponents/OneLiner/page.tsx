@@ -1,11 +1,15 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { slideInFromLeft, slideInFromTop, slideInFromRight } from '../../../../../utils/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
+"use client";
+import React, { useEffect, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  slideInFromLeft,
+  slideInFromTop,
+  slideInFromRight,
+} from "../../../../../utils/motion";
+import { SparklesIcon } from "@heroicons/react/24/solid";
 //import { ThreeScene } from '../../threeJS/threeScene'
-import { BackgroundGradientAnimation } from '@/components/ui/background-gradient-animation'
-import Link from 'next/link'
+import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import Link from "next/link";
 
 const OneLiner = () => {
   const { scrollY } = useScroll();
@@ -13,8 +17,6 @@ const OneLiner = () => {
 
   return (
     <div className="relative h-full w-full">
-
-
       {/* Content */}
       <motion.div
         initial="hidden"
@@ -33,7 +35,9 @@ const OneLiner = () => {
               variants={slideInFromTop}
             >
               <SparklesIcon className="text-yellow-500 mr-[10px] h-5 w-5" />
-              <h1 className="Welcome-text text-[16px] ">SynthOS - Automate Your Gains</h1>
+              <h1 className="Welcome-text text-[16px] ">
+                SynthOS - Automate Your Gains
+              </h1>
             </motion.div>
           </div>
 
@@ -43,7 +47,7 @@ const OneLiner = () => {
           >
             SynthOS
             <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-[30px] md:text-[40px] lg:text-[50px] text-pretty md:text-nowrap">
-              The AI Agent Marketplace for DeFi
+              Scroll's #1 Verifiable DeFAI Agent Marketplace
             </p>
           </motion.div>
 
@@ -58,8 +62,8 @@ const OneLiner = () => {
             variants={slideInFromLeft(1.6)}
             className="mt-6 cursor-pointer"
           >
-            <Link 
-              href="https://app.synthos.fun" 
+            <Link
+              href="https://app.synthos.fun"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center text-yellow-600 text-[25px] border-2 border-yellow-500 px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-white transition-colors"
@@ -74,11 +78,17 @@ const OneLiner = () => {
           variants={slideInFromRight(1)}
           className="w-1/2 flex items-center justify-center h-full hidden md:flex"
         >
-          <video src="/SynthOS.webm" autoPlay muted loop className="w-[70%] h-auto object-cover hidden lg:block" />
+          <video
+            src="/SynthOS.webm"
+            autoPlay
+            muted
+            loop
+            className="w-[70%] h-auto object-cover hidden lg:block"
+          />
         </motion.div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default OneLiner
+export default OneLiner;

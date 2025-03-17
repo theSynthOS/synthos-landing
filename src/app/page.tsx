@@ -21,7 +21,7 @@ export default function Home() {
           </HoveredLink>
 
           <HoveredLink href="https://app.synthos.fun/" target="_blank">
-            <MenuItem setActive={setActive} active={active} item="Launch_App" />
+            <MenuItem setActive={setActive} active={active} item="Launch App" />
           </HoveredLink>
         </Menu>
       </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Gluten } from "next/font/google";
+import { Gluten, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
 
@@ -8,9 +8,15 @@ const gluten = Gluten({
   subsets: ["latin"],
 });
 
+const space_grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
-  title: "SynthOS",
-  description: "AI Marketplace for DeFi Agents",
+  title: "SynthOS - Scroll's #1 Verifiable DeFAI Agent Marketplace",
+  description: "Scroll's #1 Verifiable DeFAI Agent Marketplace",
   icons: {
     icon: "/logo.png",
   },
@@ -24,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${gluten.className} overflow-x-hidden overflow-y-scroll mx-2 `}
+        className={`${space_grotesk.className} overflow-x-hidden overflow-y-scroll mx-2 `}
       >
         {children}
       </body>
