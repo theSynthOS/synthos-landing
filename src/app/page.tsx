@@ -7,7 +7,7 @@ import { BackgroundGradientAnimation } from "@/components/ui/background-gradient
 import { motion } from "framer-motion";
 import { Menu, MenuItem, HoveredLink } from "@/components/ui/navbar-menu";
 import React from "react";
-import { Footer } from "./components/footer";
+import {Footer } from "./components/footer";
 
 export default function Home() {
   const [active, setActive] = React.useState<string | null>(null);
