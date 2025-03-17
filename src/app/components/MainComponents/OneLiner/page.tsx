@@ -47,7 +47,7 @@ const OneLiner = () => {
           >
             SynthOS
             <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 text-[30px] md:text-[40px] lg:text-[50px] text-pretty md:text-nowrap">
-              Scroll's #1 Verifiable DeFAI Agent Marketplace
+              Scroll&apos;s #1 Verifiable DeFAI Agent Marketplace
             </p>
           </motion.div>
 

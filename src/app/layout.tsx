@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "SynthOS - Scroll's #1 Verifiable DeFAI Agent Marketplace",
   description: "Scroll's #1 Verifiable DeFAI Agent Marketplace",
   icons: {
-    icon: "/logo.png",
+    icon: "https://avatars.githubusercontent.com/u/199569871?s=400&u=a078c4fa4af3ed32392e7ba6bbcf36ce8a6b4379&v=4",
   },
 };
 
