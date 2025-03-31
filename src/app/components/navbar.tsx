@@ -58,6 +58,8 @@ export default function Navbar() {
           <div className="hidden md:block flex-shrink-0 ml-2">
             <Link
               href="https://app.synthos.fun"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-yellow-500 hover:bg-yellow-600 text-white px-3 py-2 rounded-md font-medium transition-colors text-sm md:text-base lg:text-lg whitespace-nowrap"
             >
               Launch App
