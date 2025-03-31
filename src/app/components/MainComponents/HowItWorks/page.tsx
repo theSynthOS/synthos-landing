@@ -67,9 +67,6 @@ export default function HowItWorks() {
         <StickyScroll content={content} />
       </div>
     </div>
-    {/* <div className="relative z-30 md:w-1/2 justify-center items-center h-[500px] hidden md:block">
-        <ThreeScene />
-      </div> */}
     </>
   );
 }
