@@ -7,8 +7,8 @@ export const MaintenanceBanner = () => {
         <div className="text-center max-w-3xl mx-4">
           <p className="text-white text-2xl md:text-4xl lg:text-5xl font-medium leading-relaxed">
             🚧 We're currently enhancing your experience! 
-            <br className="hidden sm:block" />
-            <br className="hidden sm:block" />
+            <br className="" />
+            <br className="" />
             Stay tuned for V2 - coming soon with exciting new features. 🌟
           </p>
         </div>
