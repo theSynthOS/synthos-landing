@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <main className="h-screen w-full overflow-y-scroll snap-y snap-mandatory">
-      <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 text-nowrap">
+      <div className="fixed top-0 md:top-14 left-1/2 transform -translate-x-1/2 z-50 text-nowrap">
         <Menu setActive={setActive} >
           <HoveredLink href="https://thesynthos.notion.site/" target="_blank">
             <MenuItem setActive={setActive} active={active} item="Docs" />
