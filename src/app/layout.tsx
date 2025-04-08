@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Gluten, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { BackgroundGradientAnimation } from "@/components/ui/background-gradient-animation";
+import { MaintenanceBanner } from "@/components/ui/maintenance-banner";
 
 const gluten = Gluten({
   weight: ["400", "700"],
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${space_grotesk.className} overflow-x-hidden overflow-y-scroll mx-2 `}
       >
+        <MaintenanceBanner />
         {children}
       </body>
     </html>
